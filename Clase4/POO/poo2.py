@@ -23,6 +23,14 @@ class Persona:
 	def aprender(self, nueva_habilidad):
 		self.habilidades.append(nueva_habilidad)
 
+	#Es un decorador
+	#Equivalente a un método estático en Java.
+	#Es decir es un método de la clase y no del objeto.
+	@classmethod
+	#Aquí el self toma el valor de la clase.
+	def respirar(self):
+		print("Todas las personas respiramos.")
+
 
 aldo = Persona("Aldo","Vázquez",21)
 aldo.saludar()
@@ -37,5 +45,10 @@ rodrigo = Persona("Rodrigo","Vivas",23)
 #aldo.saludar_a_otra_persona(rodrigo)
 #rodrigo.saludar_a_otra_persona(aldo)
 aldo.aprender("Dar clases.")
+aldo.aprender("Cocinar.")
 rodrigo.aprender("Bailar salsa.")
+
 print("Habilidades de Aldo: {habs}".format(habs=aldo.habilidades))
+print("Habilidades de Rodrigo: {habs}".format(habs=rodrigo.habilidades))
+
+Persona.respirar()
