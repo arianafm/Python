@@ -17,5 +17,10 @@ def diccionarios(**diccio)
 
 hola()
 hola(2,3)
+#USar sólo un * te sirve para pasar el número de parámetros que quieras.
 argumentos(6,"hola",7,"mamamia","python")
+
+#Por poner un ejemplo de para que usariamos **diccio
+#Asignas nombre (Que sería la llave)
+#Asignas valor (Que seria aldo)
 diccionarios(nombre = "Aldo", edad = "21", dinero = "mucho", comer="verdura")
