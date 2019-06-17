@@ -10,6 +10,6 @@ def areaCirculo(radio):
 def areaRectangulo(base,altura):
 	return base * altura 
 
-if __name__ == '__main__':
-	print("Hola, estoy dentro del módulo.")
+#if __name__ == '__main__':
+#	print("Hola, estoy dentro del módulo.")
 
