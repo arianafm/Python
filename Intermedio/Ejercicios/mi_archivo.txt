@@ -1,0 +1,4 @@
+Producto:carne 
+Precio:50
+Producto:queso 
+Precio:100
