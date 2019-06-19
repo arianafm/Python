@@ -1,0 +1,8 @@
+Ejemplo de una dirección IP es:
+149.243.546
+
+Una dirección IP es una ubicación dentro de la red.
+Todas las computadoras tiene una IP distinta.
+
+Puertos es una salida y una entrada.
+
