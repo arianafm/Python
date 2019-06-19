@@ -7,7 +7,7 @@ def enviar_correo(remitente, passsword, destinatario, asunto, cuerpo):
 	#Se pone el servidor de correo.
 	#587 es el puerto que utiliza gmail.
 	#smtp es el protocolo.
-	smtpserver = smtplib.SMTP("smtp.gamil.com",587)
+	smtpserver = smtplib.SMTP("smtp.gmail.com",587)
 
 	# PAsos del protocolo SMTP
 	smtpserver.ehlo() # Saludo al servidor
@@ -29,3 +29,14 @@ def enviar_correo(remitente, passsword, destinatario, asunto, cuerpo):
 	#Cierra flujos.
 	#Si no lo cerramos pueden quedar procesos abiertos que consumen la RAM.
 	smtpserver.close()
+
+if __name__ == "__main__":
+
+	usuario = input("Escriba el remitente:")
+	passsword = getpass.getpass("Escriba su contraseña:")
+	destinario = input("Escriba el destinario:")
+	asunto = input("Escriba el asunto:")
+	cuerpo = input("Escriba su mensaje:")ç
+	#El for es para hacer spam.
+	for x in range(1,4):
+		enviar_correo(usuario,passsword,destinario,asunto,cuerpo)
