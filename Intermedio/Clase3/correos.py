@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import smtplib
 import getpass 
 
@@ -36,7 +37,7 @@ if __name__ == "__main__":
 	passsword = getpass.getpass("Escriba su contraseña:")
 	destinario = input("Escriba el destinario:")
 	asunto = input("Escriba el asunto:")
-	cuerpo = input("Escriba su mensaje:")ç
+	cuerpo = input("Escriba su mensaje:")
 	#El for es para hacer spam.
-	for x in range(1,4):
+	for x in range(1,10):
 		enviar_correo(usuario,passsword,destinario,asunto,cuerpo)
