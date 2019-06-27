@@ -10,7 +10,6 @@ class Persona:
 		self.__telefono = "55555555"
 
 	def get_telefono(self):
-
 		return self.__telefono
 
 	def set_telefono(self,nuevo_numero):
