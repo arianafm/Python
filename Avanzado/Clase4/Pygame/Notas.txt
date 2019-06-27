@@ -1,0 +1,35 @@
+Pygame: Sólo puede crear juegos en dos dimensiones.
+
+SDL(Simple DirectMedia Layer)
+
+Display:
+-Display es lo que tu ves en la pantalla
+-Init()
+-Flip()
+
+Surface:
+-Surface es utilizado para representar una imagen o combinación de imágenes en la pantalla.
+-Es uno de los principales servicios con los cuales se interactúa.
+
+Sprite:
+-Puede representarse como los actores del juego.
+-Clase base para representar objetos.
+-Vienen con una gran cantidad de métodos con los cuales puedes interactuar con el ambiente del juego.
+
+Grupos:
+-Clase contenedora de Sprites.
+-Define comportamientos más específicos para Sprites.
+
+Rect:
+-Representación de bajo nivel de objetos como los sprites.
+-Define y controla áreas en la pantalla.
+Todos los personajes tienen hit box, en la cabeza, piernas, etc. 
+
+Mixer:
+-La manera en la que el programador implementa los efectos de sonido y música dentro de el juego
+
+En terminal para instalar pygame:
+	pip3 install pygame --user
+
+Ponemos el siguiente comando para saber si se instalo bien:
+	python3 -m pygame.examples.aliens
