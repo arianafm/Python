@@ -1,5 +1,5 @@
 import pygame
-#Punto de referencia del objeto en pygame es abajo a la izquierda.
+#Punto de referencia del objeto en pygame es arriba a la izquierda. (0,0)
 
 pygame.init()
 

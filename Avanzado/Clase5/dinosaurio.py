@@ -1,5 +1,7 @@
 #pip3 install pygame --user
 
+#adriana.proteco@gmail.com
+
 #Dinosaurio de google con pygame
 import pygame
 from time import sleep
@@ -79,7 +81,7 @@ while juegoCorriendo:
 			estadoSaltando = False
 			contadorSalto = 10
 		contadorPasos += 1
-	if contadorPasos > 4:
+	if contadorPasos >=4:
 		contadorPasos = 0
 
 	rectanguloDino = pygame.Rect(x,y,anchoDinosaurio,altoDinosaurio)
@@ -87,15 +89,16 @@ while juegoCorriendo:
 
 	if rectanguloDino.colliderect(rectanguloCactus):
 		ventana.blit(gameOver,(50,50))
-		pygame.display.update()
-		pygame.display.flip()
+		#pygame.display.update()
+		pygame.display.flip()#Es un tipo de update que hace refresh en la pantalla
 		sleep(2)
 		juegoCorriendo = False
 
 
 
 	ventana.blit(fondo,(0,0)) #Dibujamos el fondo de la ventana	
-	ventana.blit(spritesDino[contadorPasos//4],(x,y)) #La tupla (x,y) hace referencia a las coordenadas. #//División etnera entre 4. El // le quia todos los decimales a la división
+	ventana.blit(spritesDino[contadorPasos],(x,y))
+	#ventana.blit(spritesDino[contadorPasos//4],(x,y)) #La tupla (x,y) hace referencia a las coordenadas. #//División etnera entre 4. El // le quia todos los decimales a la división
 	ventana.blit(cactus,(xCactus,yCactus))
 
 
