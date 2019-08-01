@@ -1,4 +1,4 @@
-#I N T E R F A Z  G R Á F I C A
+:#I N T E R F A Z  G R Á F I C A
 
 from tkinter import *
 
